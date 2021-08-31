@@ -1,0 +1,61 @@
+<div class="container">
+    <h1>Add Students</h1>
+    <form [formGroup]="studentForm">
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill" >
+                <mat-label>code</mat-label>
+                <input matInput formControlName="code" placeholder="Ex. A36665" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Gender</mat-label>
+                <input matInput formControlName="gender" placeholder="Ex. Male" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill" >
+                <mat-label>Firstname</mat-label>
+                <input matInput formControlName="firstname" placeholder="Ex. Đăng" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Lastname</mat-label>
+                <input matInput formControlName="lastname" placeholder="Ex. Nguyễn" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Dob</mat-label>
+                <input matInput formControlName="dob" placeholder="Ex. 2001/8/11" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Ex. haidang11082001@gmail.com" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput formControlName="phone" placeholder="Ex. 035-770-8201" required>
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field class="example-full-width form-width" appearance="fill">
+                <mat-label>Picture</mat-label>
+                <input matInput formControlName="picture" placeholder="Ex. IMG">
+            </mat-form-field>
+        </div>
+        <button (click) = "save()" type="submit" class="btn btn-primary" [disabled] = "!studentForm.valid"><span *ngIf="id === 0">New</span>&nbsp;Save</button>
+        &nbsp;
+        <button  (click) = "saveAndCancel()" type="submit" class="btn btn-primary" [disabled] = "!studentForm.valid">Save And Cancel</button>
+        &nbsp;
+        <button *ngIf="id === 0" (click) = "randomStudent()" type="submit" class="btn btn-primary">Random Students</button>
+        &nbsp;
+        <button (click) = "onCancel()" type="submit" class="btn btn-primary btn-cancel ">Cancel </button>
+    </form>
+</div>
+

@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Học Về Form</h1>
+    <form (ngSubmit) = "onSubmit()" #myForm = "ngForm">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="name" aria-describedby="emailHelp" required [(ngModel)]="name" name="name">
+          <span *ngIf="name === ''" appBold>* Cần Phải nhập tên</span>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+          <span *ngIf="password === ''" appBold>* Cần Phải nhập mật khẩu</span>
+        </div>
+        <div class="mb-3">
+            <label for="honey" class="form-label">Honey</label>
+            <br>
+            <select>
+                <option *ngFor="let honey of honeys">
+                    {{honey}}
+                </option>
+            </select>
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled] = "!myForm.form.valid">Submit</button>
+    </form>
+</div>
+
+
+

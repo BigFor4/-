@@ -1,0 +1,40 @@
+<h1>Hello word!!!!</h1>
+<h3>Chào bạn {{name}}</h3>
+<h3>Bạn đã là {{age | number: "1.0-2"}} tuổi</h3>
+<span *ngIf="age<18 ; then condition1 ; else condition2"></span>
+    <ng-template #condition1><span appBold>Bạn dưới 18 tuổi!!!</span></ng-template>
+    <ng-template #condition2><span style="color: red;">Bạn đã hơn 18 tuổi rồi phấn đấu thôi !!!!!!</span></ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- <span *ngIf="age < 18" class="age-under">Bạn dưới 18 tuổi!!!</span>
+<br>
+<span *ngIf="age>= 18" class="age-over"> Bạn đã hơn 18 tuổi rồi phấn đấu thôi !!!!!!</span> -->
+<br><br>
+    <input [(ngModel)]="name">
+<br><br>
+<button (click) = "tangTuoi()" appBold class="btn btn-primary">Tăng Tuổi</button>
+<br><br>
+Danh sách Người Yêu: <br>
+<span>{{honeys | json}}</span>
+<div *ngFor="let honey of honeys">
+    <li>{{honey}}</li>
+</div>
+<div>
+    <select name="" id="">
+        <option *ngFor="let honey of honeys">
+            {{honey}}
+        </option>
+    </select>
+</div>

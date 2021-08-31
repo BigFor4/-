@@ -1,0 +1,53 @@
+
+<div class="container">
+    <H1 appBold>Tôi Yêu EM !</H1>
+    <h3>Chào con lợn nhà mang tên: <h2 style="font-weight: bold;">{{name}}</h2><mat-icon style="color: red; font-size: 100px; " >favorite</mat-icon></h3>
+    <h3>Bạn đã là {{age}} tuổi <mat-icon style="color: red; " >favorite</mat-icon> <mat-icon style="color: red; " >favorite</mat-icon></h3>
+    <h3>Mong lợn đi tiêm về k bị ốm nhé!!!!<mat-icon style="color: red; " >favorite</mat-icon> </h3>
+    <br>
+    <h1 style="font-size: 40px;" appBold>Yêu Nhiều !!!<mat-icon style="color: red; font-size: 50px;" >favorite</mat-icon></h1>
+    <!-- Xin chào bạn có <span class="postCss">{{posts?.length}}</span> tin nhắn mới!!! -->
+    <br>
+    <button class="btn btn-primary">Tăng Tuổi</button>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary position-relative">
+        tin nhắn mới!!!
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{posts?.length}}
+            <span class="visually-hidden">unread messages</span>
+        </span>
+    </button>
+    <br>
+    <!-- comment: <br>
+    <span>{{comments | json}}</span>
+    comment[0]: <br>
+    <span>{{comments[0] | json}}</span>
+
+    posts: <br>
+    <span>{{posts | json}}</span> -->
+    <!-- <div *ngFor="let post of posts">
+        <li>{{post | json}}</li>
+    </div> -->
+    <br>
+
+    <table class="table table-success table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{post?.id}}</td>
+                <td>{{post?.title}}</td>
+                <td>{{post?.author}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button (click) = "addPost()" class="btn btn-primary">Thêm Mới Posts</button>
+    <br>
+    <br>
+</div>

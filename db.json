@@ -1,0 +1,129 @@
+{
+  "students": [
+    {
+      "code": "A36665",
+      "gender": "male",
+      "firstname": "Đăngg",
+      "lastname": "Nguyễn",
+      "dob": "2001/8/11",
+      "email": "haidang11082001@gmail.com",
+      "phone": "035-770-8201",
+      "picture": "",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "code": "20191324",
+      "gender": "female",
+      "firstname": "Hương",
+      "lastname": "Nguyễn",
+      "dob": "2001/10/25",
+      "email": "huonggiangnextxu@gmail.com",
+      "phone": "098-327-3359",
+      "picture": ""
+    },
+    {
+      "code": "a36668",
+      "gender": "female",
+      "firstname": "Yeu",
+      "lastname": "Em",
+      "dob": "2001/1/1",
+      "email": "chanmmmmmm@gmail.com",
+      "phone": "233-263-2632",
+      "picture": "",
+      "id": 3
+    },
+    {
+      "code": "AVS-756.2109.7760.44",
+      "gender": "male",
+      "firstname": "Ilija",
+      "lastname": "Mercier",
+      "dob": "1964-05-26T10:14:18.028Z",
+      "email": "ilija.mercier@example.com",
+      "phone": "079 565 65 48",
+      "picture": "https://randomuser.me/api/portraits/men/4.jpg",
+      "id": 5
+    },
+    {
+      "code": "SSN-457-42-2574",
+      "gender": "female",
+      "firstname": "Joy",
+      "lastname": "Berry",
+      "dob": "1982-11-06T01:43:41.499Z",
+      "email": "joy.berry@example.com",
+      "phone": "(466)-678-2423",
+      "picture": "https://randomuser.me/api/portraits/women/79.jpg",
+      "id": 6
+    },
+    {
+      "code": "BSN-44955250",
+      "gender": "female",
+      "firstname": "Gioia",
+      "lastname": "Wieland",
+      "dob": "1954-06-02T00:44:14.440Z",
+      "email": "gioia.wieland@example.com",
+      "phone": "(867)-322-0911",
+      "picture": "https://randomuser.me/api/portraits/women/9.jpg",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "title 5",
+      "author": "new author 5",
+      "id": 3
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 4
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 5
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 6
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 7
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "xyz",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "Nguyễn Thị Hương",
+    "age": 19,
+    "gender": "male"
+  }
+}

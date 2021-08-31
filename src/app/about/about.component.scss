@@ -1,0 +1,10 @@
+.postCss{
+    background-color: red;
+    color: white;
+}
+.table{
+    border: solid 1px;
+    &-abc{
+        background-color: blue;
+    }
+}
